@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleDisplayName</key>
+    <string>iShare</string>
+    <key>NSExtension</key>
+    <dict>
+        <key>NSExtensionAttributes</key>
+        <dict>
+            <key>NSExtensionActivationRule</key>
+            <dict>
+                <!-- Accept one image, one generic file, or one movie -
+                     covers photos, PDFs, docs, videos, etc. -->
+                <key>NSExtensionActivationSupportsFileWithMaxCount</key>
+                <integer>1</integer>
+                <key>NSExtensionActivationSupportsImageWithMaxCount</key>
+                <integer>1</integer>
+                <key>NSExtensionActivationSupportsMovieWithMaxCount</key>
+                <integer>1</integer>
+            </dict>
+        </dict>
+        <!-- We build UI in code (ShareViewController), not a storyboard,
+             so this points straight at the class instead of using
+             NSExtensionMainStoryboard. Delete MainInterface.storyboard
+             if Xcode's template generated one. -->
+        <key>NSExtensionPrincipalClass</key>
+        <string>$(PRODUCT_MODULE_NAME).ShareViewController</string>
+        <key>NSExtensionPointIdentifier</key>
+        <string>com.apple.share-services</string>
+    </dict>
+</dict>
+</plist>
