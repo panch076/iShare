@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		EC8B0E39302E968000B2F4A8 /* ShareExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = EC8B0E2F302E968000B2F4A8 /* ShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EC8B0E4B302ED61400B2F4A8 /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = EC8B0E4A302ED61400B2F4A8 /* AppIcon.icon */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		EC8B0E09302E70C300B2F4A8 /* iShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC8B0E2F302E968000B2F4A8 /* ShareExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ShareExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC8B0E49302E987F00B2F4A8 /* ShareExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = ShareExtension.entitlements; path = ShareExtension/ShareExtension.entitlements; sourceTree = "<group>"; };
+		EC8B0E4A302ED61400B2F4A8 /* AppIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = AppIcon.icon; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -54,6 +56,7 @@
 		EC8B0E41302E970F00B2F4A8 /* Exceptions for "iShare" folder in "ShareExtension" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				iShareApp/TiltMotionManager.swift,
 				Shared/QRCodeGenerator.swift,
 				Shared/RelayConfig.swift,
 				Shared/ShareHistoryStore.swift,
@@ -100,6 +103,7 @@
 				EC8B0E49302E987F00B2F4A8 /* ShareExtension.entitlements */,
 				EC8B0E0B302E70C300B2F4A8 /* iShare */,
 				EC8B0E0A302E70C300B2F4A8 /* Products */,
+				EC8B0E4A302ED61400B2F4A8 /* AppIcon.icon */,
 			);
 			sourceTree = "<group>";
 		};
@@ -202,6 +206,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC8B0E4B302ED61400B2F4A8 /* AppIcon.icon in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +444,7 @@
 				INFOPLIST_FILE = iShare/ShareExtension/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = ShareExtension;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -470,6 +476,7 @@
 				INFOPLIST_FILE = iShare/ShareExtension/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = ShareExtension;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
